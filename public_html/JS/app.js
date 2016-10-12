@@ -15,14 +15,17 @@
 //};
 //alert(obj.affiche());
 
+
 var calnbr = Math.random() * 100 + 1;
 var nbrchercher = Math.floor(calnbr);
 var nbrtour = 0;
 var nbrrentre;
+var message = "Tours " + nbrtour + "\nSaississez votre nombre :";
+
 
 do {
     nbrtour++;
-    nbrrentre = prompt("Tours " + nbrtour + "\nSaississez votre nombre :");
+    nbrrentre = prompt(message);
     if (nbrrentre > nbrchercher) {
         alert("c'est plus petit");
     } else if (nbrrentre < nbrchercher) {
@@ -30,5 +33,28 @@ do {
     }
 } while (nbrrentre != nbrchercher)
 
-alert("c'est gagné en " + nbrtour + " tour(s)");
+switch (nbrtour) {
+    case 1:
+        alert("GENIAL\nc'est gagné en " + nbrtour + " tour(s)");
+        break;
+    case 2:
+        alert("EXELLENT\nc'est gagné en " + nbrtour + " tour(s)");
+        break;
+    case 3:
+        alert("MAGNIFIQUE\nc'est gagné en " + nbrtour + " tour(s)");
+        break;
+    case 4:
+        alert("FORMIDABLE\nc'est gagné en " + nbrtour + " tour(s)");
+        break;
+    case 5:
+        alert("SUPER\nc'est gagné en " + nbrtour + " tour(s)");
+        break;
+    case 6:
+        alert("BRAVO\nc'est gagné en " + nbrtour + " tour(s)");
+        break;
+    default :
+        alert("c'est gagné en " + nbrtour + " tour(s)\n Tu peux faire mieux");
+        break;
+}
+
 
