@@ -4,18 +4,6 @@
  * and open the template in the editor.
  */
 
-//var obj = {
-//    titre : "Kung fu panda",
-//    anneeProd : 2000,
-//    nbLiens : 20,
-//    realisateurs : [{nom:'disney'},{nom:'pixar'}],
-//    affiche : function(){
-//        return this.titre + " " + this.anneeProd + " " + this.nbLiens + " " + this.realisateurs[0].nom + " " + this.realisateurs[1].nom;
-//    }
-//};
-//alert(obj.affiche());
-
-
 var calnbr = Math.random() * 100 + 1;
 var nbrchercher = Math.floor(calnbr);
 var nbrtour = 0;
